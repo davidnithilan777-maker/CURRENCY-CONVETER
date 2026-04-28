@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Python Project</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #1e1e1e;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 50px auto;
+            width: 80%;
+            max-width: 800px;
+            background: #2d2d2d;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            color: #00ffcc;
+        }
+
+        pre {
+            text-align: left;
+            background: black;
+            color: #00ff00;
+            padding: 15px;
+            border-radius: 10px;
+            overflow-x: auto;
+        }
+
+        #qrcode {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>My Python Code 🐍</h1>
+
+    <p>This page displays my Python program.</p>
+
+    <!-- 🔥 YOUR PYTHON CODE HERE -->
+    <pre>
+# Example Python Program
+
+def greet(name):
+    return "Hello " + name
+
+print(greet("World"))
+    </pre>
+
+    <h3>Scan QR to open this page:</h3>
+    <div id="qrcode"></div>
+</div>
+
+<!-- QR Code Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<script>
+    // 🔥 IMPORTANT: Replace with your GitHub Pages link
+    var websiteLink = "https://github.com/davidnithilan777-maker/CURRENCY-CONVETER/my-qr-website/";
+
+    new QRCode(document.getElementById("qrcode"), {
+        text: websiteLink,
+        width: 200,
+        height: 200
+    });
+</script>
+
+</body>
+</html>
